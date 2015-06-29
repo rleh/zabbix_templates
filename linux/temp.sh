@@ -1,16 +1,17 @@
 #!/bin/bash
 
-sensors=`sensors | grep -E "\+[0-9]{2,3}.[0-9]°C"`
+# Sensor Names: sensors | grep -E "\+[0-9]{2,3}.[0-9]°C" -n | cut -f2 -d":"
+# Sensor Numbers: sensors | grep -E "\+[0-9]{2,3}.[0-9]°C" -n | cut -f1 -d":"
+
+sensors=`sensors | grep -E "\+[0-9]{2,3}.[0-9]°C" -n`
 
 echo "{"
 echo "\"data\":["
-#for sensor in "$sensors
 while read -r sensor;
 do
-	temp=`echo "$sensor" | cut -f2 -d"+" | cut -f1 -d"."`
-	name=`echo "$sensor" | cut -f1 -d":"`
-	echo "    {\"{#TEMPNAME}\":\"$name\",\"{#TEMPERATURE}\":\"$temp\"},"
+	num=`echo "$sensor" | cut -f1 -d":"`
+	name=`echo "$sensor" | cut -f2 -d":"`
+	echo "    {\"{#TEMPNUM}\":\"$num\",\"{#TEMPNAME}\":\"$name\"},"
 done <<< "$sensors"
-#done
 echo "]"
 echo "}"
