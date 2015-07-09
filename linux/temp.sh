@@ -13,7 +13,7 @@ do
 	num=`echo "$sensor" | cut -f1 -d":"`
 	name=`echo "$sensor" | cut -f2 -d":"`
 	#echo "    {\"{#TEMPNUM}\":\"$num\",\"{#TEMPNAME}\":\"$name\"},"
-	ITEMS="$ITEMS$TAB  {\"{#TEMPNUM}\":\"$num\",\"{#TEMPNAME}\":\"$name\"},"
+	ITEMS="$ITEMS$TAB  {\"{#TEMPNUM}\":\"$num\",\"{#TEMPNAME}\":\"$name ($num)\"},"
 done <<< "$sensors"
 ITEMS=$(echo "$ITEMS" | rev | cut -c 2- | rev)
 ITEMS=$(echo "$ITEMS" | sed 's/\t/\n/g' )
