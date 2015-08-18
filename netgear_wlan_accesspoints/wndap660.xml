@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-08-15T22:00:00Z</date>
+    <date>2015-08-18T22:00:56Z</date>
     <groups>
         <group>
             <name>Agentless Templates</name>
@@ -661,7 +661,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template SNMP Netgear WLAN AP WNDAP360:sysVersion.diff()}&gt;0</expression>
+            <expression>{Template SNMP Netgear WLAN AP WNDAP660:sysVersion.diff()}&gt;0</expression>
             <name>Version changed</name>
             <url/>
             <status>0</status>
@@ -698,7 +698,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>hrSysUpTime</key>
                     </item>
                 </graph_item>
@@ -730,7 +730,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>numberOfClients24</key>
                     </item>
                 </graph_item>
@@ -742,7 +742,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>numberOfClients5</key>
                     </item>
                 </graph_item>
@@ -754,7 +754,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>hrSysCpuUtilizationRate</key>
                     </item>
                 </graph_item>
@@ -766,7 +766,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>hrSysWlanUtilizationRate</key>
                     </item>
                 </graph_item>
@@ -795,10 +795,10 @@
                     <drawtype>2</drawtype>
                     <color>0000BB</color>
                     <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanRecvPayloadBytes</key>
                     </item>
                 </graph_item>
@@ -807,10 +807,10 @@
                     <drawtype>2</drawtype>
                     <color>00BB00</color>
                     <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanTransPayloadBytes</key>
                     </item>
                 </graph_item>
@@ -819,10 +819,10 @@
                     <drawtype>5</drawtype>
                     <color>6666FF</color>
                     <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanRecvBytes</key>
                     </item>
                 </graph_item>
@@ -831,10 +831,10 @@
                     <drawtype>5</drawtype>
                     <color>66FF66</color>
                     <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanTransBytes</key>
                     </item>
                 </graph_item>
@@ -842,11 +842,11 @@
                     <sortorder>4</sortorder>
                     <drawtype>0</drawtype>
                     <color>BBBBBB</color>
-                    <yaxisside>1</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanRecvPacket</key>
                     </item>
                 </graph_item>
@@ -854,11 +854,11 @@
                     <sortorder>5</sortorder>
                     <drawtype>0</drawtype>
                     <color>666666</color>
-                    <yaxisside>1</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanTransPacket</key>
                     </item>
                 </graph_item>
@@ -866,11 +866,11 @@
                     <sortorder>6</sortorder>
                     <drawtype>0</drawtype>
                     <color>DDDD00</color>
-                    <yaxisside>1</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanWrongPackets</key>
                     </item>
                 </graph_item>
@@ -878,11 +878,11 @@
                     <sortorder>7</sortorder>
                     <drawtype>0</drawtype>
                     <color>DD0000</color>
-                    <yaxisside>1</yaxisside>
-                    <calc_fnc>7</calc_fnc>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template SNMP Netgear WLAN AP WNDAP360</host>
+                        <host>Template SNMP Netgear WLAN AP WNDAP660</host>
                         <key>lanPacketErrorRateTotal</key>
                     </item>
                 </graph_item>
